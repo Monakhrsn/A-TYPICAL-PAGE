@@ -47,7 +47,7 @@ const Login = (props) => {
     const identifier = setTimeout(() => {
       console.log('validity is checking!');
       setFormIsValid(
-        emailIsValid.includes('@') && passwordIsValid.trim().length > 6
+        emailIsValid && passwordIsValid
       );
     }, 500);
 
